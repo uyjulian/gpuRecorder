@@ -10,7 +10,7 @@
 #include "externals.h"
 #include "folder.h"
 #include "log.h"
-#include "zlib/zlib.h"
+#include "zlib.h"
 
 // void RECORD_WriteData(BYTE flags, DWORD iSize = 0, LPVOID pMem = NULL)
 // 

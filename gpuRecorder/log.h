@@ -22,14 +22,14 @@
 		void LogAppend(const char *, ...);
 		void LogEnd();
 	#else
-		#define LogStart()
-		#define LogAppend()
-		#define LogEnd()
+		#define LogStart(...) do { } while(0)
+		#define LogAppend(...) do { } while(0)
+		#define LogEnd(...) do { } while(0)
 	#endif
 #else
-	#define LogStart()
-	#define LogAppend()
-	#define LogEnd()
+	#define LogStart(...) do { } while(0)
+	#define LogAppend(...) do { } while(0)
+	#define LogEnd(...) do { } while(0)
 #endif
 
 #endif

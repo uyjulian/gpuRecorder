@@ -14,7 +14,7 @@
 #include <tchar.h>
 #include <stdio.h>
 #include <direct.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <io.h>
 #include "resource.h"
