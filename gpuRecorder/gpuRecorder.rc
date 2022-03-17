@@ -1,0 +1,199 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 210, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DarkMan's GPU Recorder Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Plugin",IDC_STATIC,7,7,196,55
+    PUSHBUTTON      "Test",IDC_GPU_TEST,20,40,50,14
+    COMBOBOX        IDC_GPU_PLUGIN,20,20,170,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Configure",IDC_GPU_CONFIG,80,40,50,14
+    PUSHBUTTON      "About",IDC_GPU_ABOUT,140,40,50,14
+    GROUPBOX        "Recording Start",IDC_STATIC,7,65,95,80
+    CONTROL         "gpu open",IDC_START1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,20,80,50,10
+    CONTROL         "load state",IDC_START2,"Button",BS_AUTORADIOBUTTON,20,
+                    95,50,10
+    CONTROL         "key press",IDC_START3,"Button",BS_AUTORADIOBUTTON,20,
+                    110,50,10
+    COMBOBOX        IDC_START_KEY,35,125,60,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Recording Stop",IDC_STATIC,108,65,95,80
+    CONTROL         "gpu close",IDC_STOP1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,120,80,50,10
+    CONTROL         "save state",IDC_STOP2,"Button",BS_AUTORADIOBUTTON,120,
+                    95,50,10
+    CONTROL         "key press",IDC_STOP3,"Button",BS_AUTORADIOBUTTON,120,
+                    110,50,10
+    COMBOBOX        IDC_STOP_KEY,136,125,60,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Output",IDC_STATIC,7,147,196,46
+    CONTROL         "Use custom directory",IDC_CUSTOM_PATH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,158,100,10
+    EDITTEXT        IDC_PATH,20,171,120,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,150,170,45,14
+    GROUPBOX        "Status Display",IDC_STATIC,7,195,85,65
+    CONTROL         "Title Bar",IDC_STATUS_TITLEBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,210,60,10
+    CONTROL         "Send To GPU",IDC_STATUS_GPU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,225,60,10
+    CONTROL         "Draw Manually",IDC_STATUS_DRAW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,240,60,10
+    GROUPBOX        "Options",IDC_STATIC,98,195,105,65
+    CONTROL         "Record Sound",IDC_RECORD_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,210,90,10
+    CONTROL         "Compress Data",IDC_COMPRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,225,90,10
+    CONTROL         "Demo Maker Recording",IDC_DEMO_MAKER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,240,90,10
+    DEFPUSHBUTTON   "OK",IDOK,95,265,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,265,50,14
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 162, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About gpuPlayer..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,92,50,14
+    CTEXT           "gpuRecorder",IDC_TITLE,7,17,148,15,SS_CENTERIMAGE
+    CTEXT           "# version #",IDC_VERSION,7,39,148,10,SS_CENTERIMAGE
+    CTEXT           "# build #",IDC_BUILD,7,52,148,10,SS_CENTERIMAGE
+    CTEXT           "Copyright © 2003. Darko Matesic",IDC_COPYRIGHT,7,71,148,
+                    10,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,7,3,148,84
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "DarkMan's gpu Recorder plugin"
+            VALUE "FileVersion", "2, 0, 0, 1"
+            VALUE "InternalName", "gpuRecorder"
+            VALUE "LegalCopyright", "Copyright (C) 2003. Matesic Darko"
+            VALUE "OriginalFilename", "gpuRecorder.dll"
+            VALUE "ProductName", " gpuRecorder"
+            VALUE "ProductVersion", "2, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

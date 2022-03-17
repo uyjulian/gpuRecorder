@@ -1,0 +1,36 @@
+; gpuRecorder.def : Declares the module parameters for the DLL.
+
+LIBRARY      "gpuRecorder"
+
+EXPORTS
+    ; Explicit exports can go here
+
+;
+; PSEmu Pro functions
+;
+		PSEgetLibName		@1
+		PSEgetLibType		@2
+		PSEgetLibVersion	@3
+		GPUinit				@4
+		GPUshutdown			@5
+		GPUopen				@6
+		GPUclose			@7
+		GPUconfigure		@8
+		GPUabout			@9
+		GPUtest				@10
+		GPUwriteData		@11
+		GPUwriteDataMem		@12
+		GPUwriteStatus		@13
+		GPUreadData			@14
+		GPUreadDataMem		@15
+		GPUreadStatus		@16
+		GPUdmaChain			@17
+		GPUgetMode			@18
+		GPUsetMode			@19
+		GPUupdateLace		@20
+		GPUmakeSnapshot		@21
+		GPUfreeze			@22
+		GPUdisplayFlags		@23
+		GPUgetScreenPic		@24
+		GPUshowScreenPic	@25
+		RecordSound			@26

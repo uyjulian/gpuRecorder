@@ -1,0 +1,44 @@
+; Declares the module parameters for the DLL.
+
+LIBRARY      "spuRecorder"
+
+EXPORTS
+	; Explicit exports can go here
+	PSEgetLibType			@2
+	PSEgetLibName			@3
+	PSEgetLibVersion		@4
+	SPUtest					@5
+	SPUconfigure			@6
+	SPUabout				@7
+	SPUinit					@8
+	SPUshutdown				@9
+	SPUopen					@10
+	SPUclose				@11
+
+	SPUreadRegister			@12
+	SPUwriteRegister		@13
+	SPUreadDMA				@14
+	SPUwriteDMA				@15
+	SPUreadDMAMem			@16
+	SPUwriteDMAMem			@17
+	SPUplayADPCMchannel		@18
+	SPUregisterCallback		@19
+	SPUregisterCDDAVolume	@20
+	SPUfreeze				@21
+
+	;SPUupdate	 			@22
+	;SPUasync	 			@23
+
+; Old interface
+	SPUgetOne			    @24
+	SPUputOne				@25
+	SPUplaySample			@26
+	SPUsetAddr				@27
+	SPUsetPitch				@28
+	SPUsetVolumeL			@29
+	SPUsetVolumeR			@30
+	SPUstartChannels1		@31
+	SPUstartChannels2		@32
+	SPUstopChannels1		@33
+	SPUstopChannels2		@34
+	SPUplaySector			@35
